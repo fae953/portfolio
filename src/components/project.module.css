@@ -1,0 +1,165 @@
+.projectsSection {
+  padding: 100px 60px;
+}
+
+.heading {
+  margin-bottom: 60px;
+}
+
+.heading h2 {
+  font-size: 3rem;
+}
+
+.heading span {
+  color: white;
+}
+
+.line {
+  width: 70px;
+  height: 5px;
+  margin-top: 15px;
+  border-radius: 20px;
+  background: rgb(48, 111, 211);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 35px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(48, 111, 211, 0.15);
+  transition: all 0.35s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 35px rgba(48, 111, 211, 0.15);
+}
+
+.imageContainer {
+  height: 230px;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.45s ease;
+}
+
+.card:hover .image {
+  transform: scale(1.08);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 28px;
+}
+
+.content h3 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.content p {
+  color: #b8c2cf;
+  line-height: 1.8;
+  margin-bottom: 22px;
+}
+
+.tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.tech span {
+  background: rgba(48, 111, 211, 0.1);
+  color: rgb(48, 111, 211);
+  padding: 8px 15px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: auto;
+}
+
+.buttons a {
+  flex: 1;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.buttons a:first-child {
+  border: 2px solid rgb(48, 111, 211);
+  color: rgb(48, 111, 211);
+}
+
+.buttons a:first-child:hover {
+  background: rgb(48, 111, 211);
+  color: white;
+}
+
+.buttons a:last-child {
+  background: rgb(48, 111, 211);
+  color: white;
+}
+
+.buttons a:last-child:hover {
+  opacity: 0.9;
+}
+
+.hide {
+  opacity: 0;
+  transform: translateY(60px);
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.8s ease;
+}
+
+@media (max-width: 900px) {
+  .projectsSection {
+    padding: 80px 30px;
+  }
+
+  .heading h2 {
+    font-size: 2.3rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+}

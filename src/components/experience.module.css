@@ -1,0 +1,143 @@
+.experienceSection {
+  padding: 100px 60px;
+}
+
+.heading {
+  margin-bottom: 60px;
+}
+
+.heading h2 {
+  font-size: 3rem;
+}
+
+.heading span {
+  color: rgb(255, 255, 255);
+}
+
+.line {
+  width: 70px;
+  height: 5px;
+  background: rgb(48, 111, 211);
+  border-radius: 20px;
+  margin-top: 15px;
+}
+
+.card {
+  background: #10233b;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.35s ease;
+  backdrop-filter: blur(12px);
+  border-radius: 18px;
+  padding: 35px;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  border-color: rgb(48, 111, 211);
+  box-shadow: 0 12px 25px rgba(48, 111, 211, 0.15);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 25px;
+  gap: 20px;
+  background: none;
+}
+
+.head{
+    background: none;
+}
+
+.header h3 {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+  color: #ffffff;
+  background: none;
+}
+
+.company {
+  color: #B8C2CF;
+  font-size: 1rem;
+  background: none;
+}
+
+.duration {
+  background: rgb(48, 111, 211);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.description {
+  color: #B8C2CF;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  background: none;
+}
+
+.techStack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 30px;
+  background: none;
+}
+
+.techStack span {
+  background:#B8C2CF;
+  color: black;
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid #B8C2CF;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+
+.responsibilities {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: none;
+}
+
+.responsibilities li {
+  line-height: 1.8;
+  color:#B8C2CF;
+  background: none;
+}
+
+.hide {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.8s ease;
+}
+
+@media (max-width: 768px) {
+  .experienceSection {
+    padding: 80px 30px;
+  }
+
+  .heading h2 {
+    font-size: 2.3rem;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+
+  .duration {
+    align-self: flex-start;
+  }
+}

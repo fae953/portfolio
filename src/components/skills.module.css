@@ -1,0 +1,121 @@
+.skillsSection {
+  padding: 100px 60px;
+}
+
+.heading {
+  margin-bottom: 60px;
+}
+
+.heading h2 {
+  font-size: 3rem;
+}
+
+.heading span {
+  color: #ffffff;
+}
+
+.line {
+  width: 70px;
+  height: 5px;
+  background: rgb(48, 111, 211);
+  border-radius: 20px;
+  margin-top: 15px;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.card {
+  padding: 30px;
+  border-radius: 18px;
+  background: #10233b;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.35s ease;
+  min-height: 240px;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  border-color: rgb(48, 111, 211);
+  box-shadow: 0 12px 25px rgba(48, 111, 211, 0.15);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+  background: none;
+}
+
+.icon {
+  font-size: 2rem;
+  background: none;
+}
+
+.title {
+  color: #ffffff;
+  background: none;
+}
+
+.cardHeader h3 {
+  font-size: 1.3rem;
+}
+
+.pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  background: none;
+}
+
+.pill {
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: #B8C2CF;
+  border: 1px solid #B8C2CF;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.pill:hover {
+  background: rgb(48, 111, 211);
+  color: white;
+  border-color: rgb(48, 111, 211);
+  transform: scale(1.05);
+}
+
+.hide {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.7s ease;
+}
+
+@media (max-width: 900px) {
+  .skills {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skillsSection {
+    padding: 80px 30px;
+  }
+}
+
+@media (max-width: 650px) {
+  .skills {
+    grid-template-columns: 1fr;
+  }
+
+  .heading h2 {
+    font-size: 2.3rem;
+  }
+}
