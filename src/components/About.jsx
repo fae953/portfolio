@@ -12,7 +12,7 @@ export default function About() {
           setShow(true);
         }
       },
-      { threshold: 0.3 }
+      { threshold: 0.3 },
     );
 
     observer.observe(ref.current);
@@ -28,7 +28,7 @@ export default function About() {
     >
       <div className={styles.heading}>
         <h2>
-           <span> About Me</span>
+          <span> About Me</span>
         </h2>
 
         <div className={styles.line}></div>
@@ -36,23 +36,21 @@ export default function About() {
 
       <div className={styles.content}>
         <p>
-          I'm a Computer Science student and Frontend Developer passionate
-          about building modern, responsive and user-friendly web
-          applications.
+          I'm a Computer Science student and Frontend Developer passionate about
+          building modern, responsive and user-friendly web applications.
         </p>
 
         <p>
-          Through personal projects, academic work and internship
-          experience, I have developed scalable applications, solved
-          real-world problems and collaborated with development teams.
-          I enjoy turning ideas into functional digital products while
-          constantly improving my skills.
+          Through personal projects, academic work and internship experience, I
+          have developed scalable applications, solved real-world problems and
+          collaborated with development teams. I enjoy turning ideas into
+          functional digital products while constantly improving my skills.
         </p>
       </div>
 
       <div className={styles.stats}>
         <div>
-          <h3>15+</h3>
+          <h3>7+</h3>
           <p>Projects Built</p>
         </div>
 
