@@ -24,7 +24,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  color: #FFFFFF;
+  color: #ffffff;
   background: none;
 }
 
@@ -72,9 +72,7 @@
   top: 80px;
   left: 0;
   width: 100%;
-  background: rgba(253, 253, 253, 0.95);
   backdrop-filter: blur(10px);
-
   display: flex;
   flex-direction: column;
   padding: 20px;

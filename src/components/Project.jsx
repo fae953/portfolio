@@ -5,11 +5,11 @@ import styles from "./project.module.css";
 const projects = [
   {
     title: "Portfolio",
-    image: "/birthday.png",
+    image: "/portfolio.png",
     description:
       "A modern and responsive portfolio showcasing projects, skills and experience with smooth animations and a clean user interface.",
     tech: ["React", "CSS Modules", "JavaScript"],
-    // live: "#",
+    live: "https://portfolio-gray-psi-b8qg75980p.vercel.app/",
   },
 
   {
@@ -26,7 +26,7 @@ const projects = [
     description:
       "A custom-designed birthday website built as a personalized digital gift. Features responsive layouts, smooth animations, interactive sections, and a modern user interface tailored to the recipient.",
     tech: ["React", "Redux", "TypeScript"],
-    live: "https://birthday-site-taupe-eta.vercel.app/",
+    // live: "https://birthday-site-taupe-eta.vercel.app/",
   },
 ];
 

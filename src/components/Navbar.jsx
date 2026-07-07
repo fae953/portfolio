@@ -24,7 +24,7 @@ export default function Navbar() {
     >
       <div className={styles.heading}>
         <img src="avatar.png" className={styles.logo} alt="logo" />
-        <h1 className={styles.text}>Fathia</h1>
+        <h1 className={styles.text}>Frontend Dev</h1>
       </div>
 
       <div className={styles.links}>

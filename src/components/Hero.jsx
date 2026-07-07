@@ -12,9 +12,7 @@ export default function Hero() {
   return (
     <section className={styles.hero} id="hero">
       <div
-        className={`${styles.content} ${
-          loaded ? styles.show : styles.hide
-        }`}
+        className={`${styles.content} ${loaded ? styles.show : styles.hide}`}
       >
         <p className={styles.welcome}>WELCOME TO MY PORTFOLIO</p>
 
@@ -23,17 +21,16 @@ export default function Hero() {
         </h1>
 
         <p className={styles.smallText}>
-          I am a Frontend Developer and a Computer Science Student at
-          Babcock University.
-          <br />
-          I build responsive and scalable web applications using React,
+          I am a Frontend Developer and a Computer Science Student at Babcock
+          University.
+          <br />I build responsive and scalable web applications using React,
           TypeScript and Redux.
         </p>
 
         <div className={styles.buttons}>
-          <a href="#projects" className={styles.primaryBtn}>
+          <a href="#project" className={styles.primaryBtn}>
             View My Work
-            <ArrowRight size={18}  />
+            <ArrowRight size={18} />
           </a>
 
           <a href="#contact" className={styles.secondaryBtn}>
